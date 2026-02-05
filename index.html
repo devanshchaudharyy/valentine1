@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Forever</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="photo-container" id="photoContainer">
+        <img src="images/photo1.jpg" class="floating-img">
+        <img src="images/photo2.jpg" class="floating-img">
+        <img src="images/photo3.jpg" class="floating-img">
+        <img src="images/photo4.jpg" class="floating-img">
+    </div>
+
+    <div class="glass-overlay"></div>
+
+    <main class="content-box">
+        <section id="intro">
+            <h1 class="fade-in">Thank you for accepting my message on that day...</h1>
+            <p class="fade-in delay">It's been 1 year and 5 months of us together, and I really want to make it forever.</p>
+            <button class="next-btn fade-in delay-long" onclick="showValentine()">Continue ❤️</button>
+        </section>
+
+        <section id="question" class="hidden">
+            <h2>Will you be my Valentine?</h2>
+            <div class="btn-group">
+                <button id="yesBtn" onclick="showVideo()">YES</button>
+                <button id="noBtn">NO</button>
+            </div>
+        </section>
+
+        <section id="videoSection" class="hidden">
+            <h2>I love you! ❤️</h2>
+            <video id="myVideo" width="100%" controls>
+                <source src="celebration.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
